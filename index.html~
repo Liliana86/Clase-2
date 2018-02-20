@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/smtp.js"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyCB9Bm-D2P1ZiCLxPNwT9hzjQJkcn_I94k"></script>
+    </head>
+    <body>
+        <header>
+            Esto es un encabezado
+        </header>
+        <nav>
+            Esto es una navegación
+        </nav>
+        <section>
+            <p id="demo">Click the button to get your position.</p>
+
+            <button onclick="getLocation()">Try It</button>
+            
+            <div id="mapholder"></div>
+        </section>
+        <section>
+            Esto es una seccion
+            <h1>Formulario</h1>
+            <form id="myForm">
+                Nombre: <input type="text" name="fname"><br>
+                Apellido: <input type="text" name="lname"><br>
+                Mensaje: <input type="text" name="message"><br>
+
+            </form> 
+            <button onclick="emailMessage()">Enviar mensaje</button>
+        </section>    
+    </body>
+</html>
